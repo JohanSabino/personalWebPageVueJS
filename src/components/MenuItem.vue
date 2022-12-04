@@ -35,4 +35,27 @@ a:hover {
     display: flex;
     justify-content: center;
 }
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    a {
+        color: #d1f6f7;
+        text-decoration: none;
+        display: block;
+    }
+    a:hover {
+        background-color: white;
+        color: black;
+    }
+    .item {
+        display: flex;
+        align-items: center;
+        padding: 0px;
+        margin: 15px 0;
+        gap: 0px;
+    }
+    .item .icon {
+        width: 70px;
+        display: flex;
+        justify-content: center;
+    }
+}
 </style>

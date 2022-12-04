@@ -50,7 +50,7 @@ aside div {
     margin: 0;
     width: 40%;
     border-radius: 0 0 15% 15%;
-    margin-top: 60px;
+    margin-top: 2%;
 }
 #know_me {
     font-size: 10px;
@@ -109,7 +109,7 @@ aside div {
 
 .article_main {
     width: 75%;
-    margin-top: 5%;
+    margin-top: 2%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;

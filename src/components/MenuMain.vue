@@ -4,7 +4,7 @@ import MenuItem from './MenuItem.vue';
 import menuItems from './menuItems';
 import '@/components/css/style.css';
 import '@/components/css/media-queries.css';
-const collapsed = ref(false);
+const collapsed = ref(true);
 </script>
 <template>
     <meta charset="UTF-8" />
@@ -31,7 +31,7 @@ const collapsed = ref(false);
             </button>
         </div>
         <div class="profile">
-            <img :src="menuItems.profile.image" alt="" />
+            <img :src="menuItems.profile.image" alt="personal_pic" />
             <div class="profile-name" v-if="!collapsed">
                 {{ menuItems.profile.name }}
             </div>
@@ -123,11 +123,12 @@ const collapsed = ref(false);
     list-style: none;
     padding: 0;
     margin: 0;
+    font-size: 10px;
 }
 
 .social-link {
     color: #82a4a5;
-    font-size: 20px;
+    font-size: 10px;
     text-align: end;
     margin: 0;
     padding: 0;
@@ -150,7 +151,7 @@ const collapsed = ref(false);
     justify-content: center;
     flex-direction: column;
     transition: 0.5s;
-    font-size: 40px;
+    font-size: 20px;
     padding: 0;
 }
 .expanded .social-link ul li a {
@@ -158,13 +159,120 @@ const collapsed = ref(false);
     text-decoration: none;
     display: block;
     transition: 0.5s;
-    font-size: 40px;
+    font-size: 20px;
     padding: 0;
 }
 .social-link ul li a:hover {
     background-color: white;
     color: black;
-    font-size: 40px;
+    font-size: 20px;
     padding: 0;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .menu {
+        background-color: rgb(20, 15, 7, 0.9);
+        transition: width 0.5s;
+        width: 20%;
+        margin: 0;
+        padding: 0 0px;
+        color: white;
+        height: 100vh;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 99999;
+    }
+
+    .header {
+        display: flex-end;
+        padding: 10px;
+    }
+    .menu-button {
+        border: none;
+        background-color: transparent;
+        color: white;
+        padding: 0 10px;
+        padding: 0 10px 20px;
+    }
+    .menu-items {
+        color: white;
+    }
+    /* we will explain what these classes do next! */
+    .collapsed {
+        width: 15%;
+    }
+    .expanded {
+        width: 40%;
+    }
+    .profile {
+        padding: 10px 0px;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .profile img {
+        min-width: 40px;
+        max-width: 350px;
+        border-radius: 50%;
+        height: auto;
+        margin: 0;
+        padding: 0%;
+    }
+    .profile-name {
+        text-align: center;
+        margin: 10px 0;
+        font-size: 15px;
+        transition: width 0.5s;
+    }
+    .menu-items ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .social-link {
+        color: #82a4a5;
+        font-size: 10px;
+        text-align: end;
+        margin: 0;
+        padding: 0;
+    }
+    .social-link ul {
+        list-style: none;
+        text-align: center;
+        padding-left: 0;
+        margin: auto;
+    }
+
+    .social-link ul li {
+        width: 80%;
+        margin: 5px auto;
+    }
+    .social-link ul li a {
+        color: #d1f6f7;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        transition: 0.5s;
+        font-size: 25px;
+        padding: 0;
+    }
+    .expanded .social-link ul li a {
+        color: #d1f6f7;
+        text-decoration: none;
+        display: block;
+        transition: 0.5s;
+        font-size: 25px;
+        padding: 0;
+    }
+    .social-link ul li a:hover {
+        background-color: white;
+        color: black;
+        font-size: 25px;
+        padding: 0;
+    }
 }
 </style>
