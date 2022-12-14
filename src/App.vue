@@ -37,6 +37,13 @@
                         </li>
                         <li>
                             <a
+                                href="https://github.com/JohanSabino/KlarkIoIntern"
+                                target="_blank"
+                                >ModalCarousel - Bootstrap5</a
+                            >
+                        </li>
+                        <li>
+                            <a
                                 href="https://github.com/JohanSabino/golangPage"
                                 target="_blank"
                                 >This page - Golang Backend Setup</a
@@ -50,12 +57,13 @@
             <article class="Skills" id="Skills">
                 <h1><strong>Skills</strong></h1>
                 <ul>
-                    <li>Golang - Gin</li>
+                    <li>Golang</li>
                     <li>JavaScript - VueJS</li>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
+                    <li>HTML5 - Bootstrap 5</li>
+                    <li>CSS3 -SASS</li>
                     <li>Git - Git Flow</li>
                     <li>MySql & PostgreSql</li>
+                    <li>NoSQL MongoDB</li>
                     <li>Scrum Methodology</li>
                     <li>Software architecture</li>
                 </ul>
@@ -138,7 +146,6 @@
             </fieldset>
         </footer>
     </div>
-    `
 </template>
 <script setup>
 import MenuMain from './components/MenuMain.vue';
