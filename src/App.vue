@@ -57,7 +57,7 @@
             <article class="Skills" id="Skills">
                 <h1><strong>Skills</strong></h1>
                 <ul>
-                    <li>Golang</li>
+                    <li>Golang & JAVA</li>
                     <li>JavaScript - VueJS</li>
                     <li>HTML5 - Bootstrap 5</li>
                     <li>CSS3 -SASS</li>
