@@ -1,11 +1,8 @@
 <template>
-    <MenuMain />
-
-    <br />
-    <div class="content_main">
-        <aside>
-            <div>
-                <img
+    <div class="container">
+        <div class="row">
+            <div class="col-1"> 1</div>
+            <div class="col-3"> <img
                     src="https://i.imgur.com/oNwZjtR.png"
                     alt="foto_personal"
                     id="pic"
@@ -50,11 +47,8 @@
                             >
                         </li>
                     </ul>
-                </article>
-            </div>
-        </aside>
-        <article class="article_main">
-            <article class="Skills" id="Skills">
+                </article></div>
+            <div class="col-4"> <article class="Skills" id="Skills">
                 <h1><strong>Skills</strong></h1>
                 <ul>
                     <li>Golang & JAVA</li>
@@ -71,9 +65,8 @@
                 <br />
 
                 <br />
-            </article>
-
-            <article class="Soft_Skills" id="Soft_Skills">
+            </article></div>
+            <div class="col-4"> <article class="Soft_Skills" id="Soft_Skills">
                 <h1><strong>Soft Skills</strong></h1>
 
                 <ul>
@@ -87,11 +80,11 @@
                 <br />
 
                 <br />
-            </article>
-        </article>
+            </article></div>
+        </div>
     </div>
-    <div class="div_pattern">
-        <footer class="footer" id="ContactMe">
+    <div class="container">
+        <div class="row">
             <h1>
                 <strong>I'm glad you were interested in my profile!</strong>
             </h1>
@@ -144,11 +137,10 @@
                     </form>
                 </div>
             </fieldset>
-        </footer>
+        </div>
     </div>
 </template>
 <script setup>
-import MenuMain from './components/MenuMain.vue';
 </script>
 
 <style scoped>
