@@ -1,7 +1,8 @@
 #body {
     width: 100%;
     margin: auto;
-    background-color: #CAF0F8;
+    background-image: url('/src/img/pexels.png');
+    background-size: cover;
     font-family: 'Abril Fatface', cursive;
     font-family: 'Arvo', serif;
 }
@@ -56,7 +57,6 @@ aside div {
 }
 #know_me {
     font-size: 10px;
-    text-align: center;
     text-overflow: ellipsis;
     text-transform: capitalize;
     background-color: rgba(0, 0, 0, 0.6);
@@ -109,65 +109,8 @@ aside div {
     font-weight: bold;
 }
 
-.article_main {
-    width: 75%;
-    margin-top: 2%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
 
-.Skills {
-    margin: 20px;
-}
 
-.Skills h1 {
-    margin: 20px;
-}
-
-.Skills ul {
-    background: rgba(0, 0, 0, 0.4);
-    padding: 30px 30px 30px 60px;
-    color: #f5ebe0;
-    border-radius: 7%;
-    box-shadow: 5px 10px 20px 0 #000;
-    border: inset #4d6099;
-    border-width: 5px 5px 1px 5px;
-    margin: auto;
-    list-style: none;
-    line-height: 25px;
-}
-.Soft_Skills {
-    margin: 45% 20px 0;
-}
-.Soft_Skills h1 {
-    margin: 20px;
-}
-.Soft_Skills ul {
-    background: rgba(0, 0, 0, 0.4);
-    padding: 30px 30px 30px 60px;
-    color: #f5ebe0;
-    border-radius: 7%;
-    box-shadow: 5px 10px 20px 0 #000;
-    border: inset #4d6099;
-    border-width: 5px 5px 1px 5px;
-    margin: auto;
-    list-style: none;
-    line-height: 25px;
-}
-
-.badge-base {
-    width: 400px;
-}
-.badge-base {
-    position: absolute;
-    right: -60px;
-    top: 100px;
-    position: fixed;
-}
-.div_pattern {
-    width: 100%;
-}
 
 footer h1,
 p {

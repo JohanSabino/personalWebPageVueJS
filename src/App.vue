@@ -25,7 +25,7 @@
                 </div>
             </div>
                 <article id="Projects">
-                    <h3>Personal sample projects</h3>
+                    <h3 class="text-light">Personal sample projects</h3>
                     <ul>
                         <li>
                             <a
@@ -158,6 +158,6 @@ import navBar from '@/components/navbar/nav-bar.vue'
 <style scoped>
 
 @import '@/components/css/normalize.css';
-/* @import '@/components/css/style.css'; */
+@import '@/components/css/style.css';
 @import '@/components/css/media-queries.css';
 </style>
