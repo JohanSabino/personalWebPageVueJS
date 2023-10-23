@@ -1,11 +1,14 @@
-body {
-    background-color: #1b253c;
-    background-size: cover;
-    background-position: right bottom, left top;
-    background-repeat: no-repeat, no-repeat;
-    background-attachment: fixed;
+#body {
+    width: 100%;
+    margin: auto;
+    background-color: #CAF0F8;
     font-family: 'Abril Fatface', cursive;
     font-family: 'Arvo', serif;
+}
+.container{
+ 
+    width: 50%;
+
 }
 
 .color1 {
@@ -30,7 +33,7 @@ body {
 /*INIT INDEX.HTML*/
 
 .content_main {
-    width: 94%;
+    width: 100%;
     margin: 0 2%;
     height: auto;
     display: flex;
@@ -39,7 +42,7 @@ body {
     gap: 2%;
 }
 aside {
-    width: 25%;
+    width: 100%;
     margin-left: 40px;
 }
 aside div {
@@ -47,7 +50,7 @@ aside div {
 }
 #pic {
     margin: 0;
-    width: 40%;
+    width: 30%;
     border-radius: 0 0 15% 15%;
     margin-top: 2%;
 }
@@ -63,19 +66,19 @@ aside div {
     color: #d1f6f7;
 }
 
-.Apis {
+#Projects {
     text-align: center;
 }
 
-.Apis h3 {
+#Projects h3 {
     margin-top: 15px;
     font-size: 25px;
 }
-.Apis ul {
+#Projects ul {
     margin: 20px 70px;
     padding: 0;
 }
-.Apis ul li {
+#Projects ul li {
     background-color: #1b253c;
     padding: 15px 0;
     margin: 5px 0;
@@ -86,20 +89,20 @@ aside div {
     border: 1px solid #d1f6f7;
     transition: 0.5s;
 }
-.Apis ul li:hover {
+#Projects ul li:hover {
     background-color: #d1f6f7;
     padding: 15px;
     border-radius: 15px;
     border: 1px solid #1b253c;
 }
-.Apis ul li a {
+#Projects ul li a {
     text-decoration: none;
     color: #d1f6f7;
     transition: 0.5s;
     font-size: 20px;
     font-weight: bold;
 }
-.Apis ul li a:hover {
+#Projects ul li a:hover {
     text-decoration: none;
     color: #1b253c;
     font-size: 20px;

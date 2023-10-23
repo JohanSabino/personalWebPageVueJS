@@ -1,21 +1,30 @@
 <template>
+    <div id="body">
     <div class="container">
         <div class="row">
-            <div class="col-1"> 1</div>
-            <div class="col-3"> <img
+            <navBar></navBar>
+            <div >
+                <div class="row">
+                    <div class="col-6 align-self-center">
+                <img
                     src="https://i.imgur.com/oNwZjtR.png"
                     alt="foto_personal"
                     id="pic"
-                />
+                /></div>
+                <div class="col-6 align-self-center">
                 <p id="know_me">
-                    "A man who becomes conscious of the responsibility he bears
-                    toward a human being who affectionately waits for him, or to
-                    an unfinished work, will never be able to throw away his
-                    life."
-                    <br /><strong>Viktor Frankl</strong>
+                    I am a developer with a passion for clean code and technological innovation. 
+                    My expertise spans Vue.js, Golang, PHP Laravel, and WordPress, 
+                    but my true strength lies in my ability to transform complex challenges 
+                    into elegant and efficient solutions. I excel at quickly adapting 
+                    to new technologies and apply a creative approach to problem-solving. 
+                    I am thrilled at the prospect of contributing my experience and creativity 
+                    to challenging and collaborative projects.
+                    <br /><strong>Go ahead</strong>
                 </p>
-
-                <article class="Apis">
+                </div>
+            </div>
+                <article id="Projects">
                     <h3>Personal sample projects</h3>
                     <ul>
                         <li>
@@ -139,12 +148,16 @@
             </fieldset>
         </div>
     </div>
+</div>
 </template>
 <script setup>
+// eslint-disable-next-line
+import navBar from '@/components/navbar/nav-bar.vue'
 </script>
 
 <style scoped>
+
 @import '@/components/css/normalize.css';
-@import '@/components/css/style.css';
+/* @import '@/components/css/style.css'; */
 @import '@/components/css/media-queries.css';
 </style>
