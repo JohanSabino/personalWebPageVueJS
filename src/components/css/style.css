@@ -42,24 +42,18 @@
     box-sizing: border-box;
     gap: 2%;
 }
-aside {
-    width: 100%;
-    margin-left: 40px;
-}
-aside div {
-    text-align: center;
-}
 #pic {
     margin: 0;
-    width: 30%;
+    width: 40%;
     border-radius: 0 0 15% 15%;
     margin-top: 2%;
 }
 #know_me {
-    font-size: 10px;
+    font-size: 15px;
+    text-align: left;
     text-overflow: ellipsis;
     text-transform: capitalize;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.3);
     border-radius: 7%;
     padding: 10px;
     margin: 10px 0;
