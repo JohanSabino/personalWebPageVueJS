@@ -56,3 +56,96 @@
         </div>
     </div>
 </template>
+
+<style scoped>
+footer h1,
+p {
+    text-align: center;
+}
+fieldset {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10%;
+    width: 20%;
+    margin: auto;
+}
+
+legend {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    color: #f5ebe0;
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10%;
+}
+
+.contenedor1_contact {
+    margin: auto;
+    width: 400px;
+    padding: 30px;
+    box-sizing: content-box;
+}
+.elemento {
+    text-align: center;
+}
+.elemento label {
+    color: #f5ebe0;
+    font-size: 20px;
+}
+.elemento textarea {
+    width: 100%;
+    padding-top: 2px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.elemento input {
+    width: 300px;
+    height: 30px;
+    padding-top: 2px;
+    margin: 10px;
+    border-radius: 10px;
+}
+form button {
+    margin: 0;
+    padding: 3px;
+    width: 150px;
+    letter-spacing: 3px;
+    background: none;
+    color: #d5bdaf;
+    border-radius: 7%;
+    border-color: #d5bdaf;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+form button:hover {
+    margin: 0;
+    padding: 3px;
+    width: 150px;
+    letter-spacing: 3px;
+    background: none;
+    color: #fff;
+    border-radius: 7%;
+    border-color: #fff;
+}
+form button::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: rgba(213, 189, 175, 0.4);
+    border-radius: 7%;
+    z-index: -1;
+    transition: 0.8s;
+}
+form button::before {
+    bottom: 0;
+    border-radius: 50% 50% 0% 0%;
+}
+form button:hover::before {
+    height: 180%;
+}
+/*Links*/
+</style>

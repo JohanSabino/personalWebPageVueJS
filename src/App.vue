@@ -1,21 +1,21 @@
 <template>
-    <div id="body">
-    <div class="container">
-        <div class="row">
-            <navBar></navBar>
-            <div >
-                <headPage></headPage>
-                <projectsMe></projectsMe>
-            </div>
-        </div>
-        <div>
-            <skillsMe></skillsMe>
-        </div>
-    </div>
-   <div>
-    <footerPage></footerPage>
-   </div>
-</div>
+    <body class="container-fluid">
+       <div class="container-a">
+           <div class="row">
+               <navBar></navBar>
+               <div>
+                   <headPage></headPage>
+                   <projectsMe></projectsMe>
+               </div>
+           </div>
+           <div>
+               <skillsMe></skillsMe>
+           </div>
+       </div>
+       <div>
+           <footerPage></footerPage>
+       </div>
+   </body>
 </template>
 <script setup>
 // eslint-disable-next-line
@@ -29,6 +29,31 @@ import footerPage from '@/components/footer/footerPage.vue'
 <style scoped>
 
 @import '@/components/css/normalize.css';
-@import '@/components/css/style.css';
 @import '@/components/css/media-queries.css';
+
+.container-fluid {
+    width: 100%;
+    background-image: url('/src/img/pexels.png');
+    background-size: cover;
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Arvo', serif;
+}
+.container-a{
+    padding: 1% 10% 1% 10%;
+}
+.color1 {
+    color: #140f07;
+}
+.color2 {
+    color: #1b253c;
+}
+.color3 {
+    color: #4d6099;
+}
+.color4 {
+    color: #87a5fb;
+}
+.color5 {
+    color: #d1f6f7;
+}
 </style>

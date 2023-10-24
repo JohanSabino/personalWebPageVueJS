@@ -1,14 +1,14 @@
 <template>
-<nav class="navbar navbar-expand-lg bg-transparent">
+<nav class="navbar navbar-expand-lg bg-transparent fs-2 text ">
     <div class="container-fluid ">
-      <a class="navbar-brand text-light" href="#">Johan Sabino</a>
+      <a class="navbar-brand text-light fs-1 text"  href="#">Johan Sabino</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon "></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <div class="collapse navbar-collapse d-flex flex-row-reverse bd-highlight" id="navbarNavDropdown">
         <ul class="navbar-nav ">
           <li class="nav-item ">
-            <a class="nav-link active text-light" aria-current="page" href="#Skills">Skills</a>
+            <a class="nav-link active text-light " aria-current="page" href="#Skills">Skills</a>
           </li>
           <li class="nav-item ">
             <a class="nav-link text-light" href="#Soft_Skills">Soft Skills</a>
@@ -36,6 +36,14 @@
 .navbar navbar-expand-lg bg-body-tertiary {
   background-color: #ffff;
 }
-
+li{
+  margin: 0 60px 0 0;
+  transition: 1s;
+  overflow:hidden;
+}
+li:hover{
+  margin: 0 60px 0 0;
+  -webkit-transform:scale(1.1);transform:scale(1.1);
+}
 </style>
 
