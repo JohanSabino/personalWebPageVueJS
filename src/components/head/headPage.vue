@@ -1,8 +1,8 @@
 <template>
     <div class="row">
-    <div class="col-6 text-center">
+    <div class="col-6">
         <picture  id="pic">
-            <img src="https://i.imgur.com/oNwZjtR.png" alt="foto_personal"/>
+            <img src="../../img/me.png" alt="foto_personal"/>
         </picture>
     </div>
     <div class="col-6 align-self-center">
@@ -26,9 +26,15 @@
 </div>
 </template>
 <style scoped>
-
+.row{
+    margin-top: 5%;
+}
 #pic {
     width: 100%;
+}
+img{
+    width: 40%;
+    margin-left: 13%;
 }
 #know_me {
     width: auto;
@@ -47,7 +53,7 @@
     font-size: 24px;
     text-align: left;
     text-overflow: ellipsis;
-    background-color: rgba(0, 0, 0, 0.2);;
+    background-color: rgba(0, 0, 0, 0.2);
     padding: 10px;
     color: #ffff;
     transform: translateX(-60px);

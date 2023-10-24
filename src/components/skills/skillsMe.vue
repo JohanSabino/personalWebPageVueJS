@@ -1,5 +1,6 @@
 <template>
-     <div class="col-4"> <article class="Skills" id="Skills">
+    <div class="row">
+     <div class="col-6"> <article class="Skills" id="Skills">
                 <h1><strong>Skills</strong></h1>
                 <ul>
                     <li>Golang & JAVA</li>
@@ -18,7 +19,7 @@
                 <br />
             </article>
         </div>
-            <div class="col-4"> <article class="Soft_Skills" id="Soft_Skills">
+            <div class="col-6"> <article class="Soft_Skills" id="Soft_Skills">
                 <h1><strong>Soft Skills</strong></h1>
 
                 <ul>
@@ -33,4 +34,23 @@
 
                 <br />
             </article></div>
+        </div>
 </template>
+
+<style scoped>
+
+    .row{
+        color: #ffff;
+        margin-left: 5%;
+    }
+
+    ul{
+        font-size: 30px;
+        font-style: italic;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        
+    }
+
+</style>

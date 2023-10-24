@@ -7,7 +7,7 @@
                 <headPage></headPage>
             </div>
         </div>
-        <div class="row">
+        <div class="row" id="row2">
             <div class="col-4">
                 <projectsMe></projectsMe>
             </div>
@@ -37,13 +37,17 @@ import footerPage from '@/components/footer/footerPage.vue'
 
 .container-fluid {
     width: 100%;
-    background-image: url('/src/img/pexels.png');
+    --opacidad-negro: 0.3;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url('/src/img/pexels.png');
     background-size: cover;
     font-family: 'Abril Fatface', cursive;
     font-family: 'Arvo', serif;
 }
 .container-a{
     padding: 1% 10% 1% 10%;
+}
+#row2{
+    margin-top: 10%;
 }
 .color1 {
     color: #140f07;

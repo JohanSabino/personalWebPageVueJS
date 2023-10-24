@@ -1,6 +1,6 @@
 <template>
-     <div class="container">
-        <div class="row">
+    <div class="row">
+        <div>
             <h1>
                 <strong>I'm glad you were interested in my profile!</strong>
             </h1>
@@ -20,27 +20,27 @@
                         autocomplete="off"
                     >
                         <div class="elemento">
-                            <label for="name">Name:</label> <br />
+                            <label for="name">Name</label> <br />
                             <input
                                 type="text"
                                 id="name"
                                 name="name"
-                                placeholder="nombre y apellido"
+                                placeholder="name/company"
                                 required="true"
                             /><br />
                         </div>
                         <div class="elemento">
-                            <label for="email">Email:</label><br />
+                            <label for="email">Email</label><br />
                             <input
                                 type="email"
                                 id="email"
                                 name="email"
-                                placeholder="juanito@mail.com"
+                                placeholder="person@mail.com"
                                 required="true"
                             /><br />
                         </div>
                         <div class="elemento">
-                            <label for="mensaje">Message:</label> <br />
+                            <label for="mensaje">Message</label> <br />
                             <textarea
                                 id="mensaje"
                                 name="mensaje"
@@ -58,52 +58,24 @@
 </template>
 
 <style scoped>
-footer h1,
-p {
+.row
+{
+    padding: 5% 0 5% 0 ;
     text-align: center;
+    color: #ffff;
 }
-fieldset {
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 10%;
-    width: 20%;
-    margin: auto;
+h1{
+    font-size: 50px;
+}
+p{
+    font-size: 30px;
+}
+legend{
+    font-size: 30px;
 }
 
-legend {
-    width: 50%;
-    margin: auto;
-    text-align: center;
-    color: #f5ebe0;
+label{
     font-size: 25px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 10%;
-}
-
-.contenedor1_contact {
-    margin: auto;
-    width: 400px;
-    padding: 30px;
-    box-sizing: content-box;
-}
-.elemento {
-    text-align: center;
-}
-.elemento label {
-    color: #f5ebe0;
-    font-size: 20px;
-}
-.elemento textarea {
-    width: 100%;
-    padding-top: 2px;
-    margin: 10px;
-    border-radius: 10px;
-}
-.elemento input {
-    width: 300px;
-    height: 30px;
-    padding-top: 2px;
-    margin: 10px;
-    border-radius: 10px;
 }
 form button {
     margin: 0;
