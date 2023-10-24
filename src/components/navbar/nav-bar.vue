@@ -39,11 +39,10 @@
 li{
   margin: 0 60px 0 0;
   transition: 1s;
-  overflow:hidden;
 }
 li:hover{
   margin: 0 60px 0 0;
-  -webkit-transform:scale(1.1);transform:scale(1.1);
+  -webkit-transform:scale(1.0);transform:scale(1.1);
 }
 </style>
 

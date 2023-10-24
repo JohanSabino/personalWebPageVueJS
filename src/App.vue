@@ -1,20 +1,24 @@
 <template>
     <body class="container-fluid">
-       <div class="container-a">
-           <div class="row">
-               <navBar></navBar>
-               <div>
-                   <headPage></headPage>
-                   <projectsMe></projectsMe>
-               </div>
-           </div>
-           <div>
-               <skillsMe></skillsMe>
-           </div>
-       </div>
-       <div>
-           <footerPage></footerPage>
-       </div>
+    <div class="container-a">
+        <div class="row">
+            <navBar></navBar>
+            <div>
+                <headPage></headPage>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <projectsMe></projectsMe>
+            </div>
+            <div class="col-8">
+                <skillsMe></skillsMe>
+            </div>
+         </div>
+     </div>
+     <div>
+         <footerPage></footerPage>
+     </div>
    </body>
 </template>
 <script setup>
