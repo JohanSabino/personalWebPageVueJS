@@ -58,25 +58,28 @@
 </template>
 
 <style scoped>
-.row
-{
-    padding: 5% 0 5% 0 ;
+.row {
+    padding: 5% 0 5% 0;
     text-align: center;
     color: #ffff;
 }
-h1{
+
+h1 {
     font-size: 50px;
 }
-p{
-    font-size: 30px;
-}
-legend{
+
+p {
     font-size: 30px;
 }
 
-label{
+legend {
+    font-size: 30px;
+}
+
+label {
     font-size: 25px;
 }
+
 form button {
     margin: 0;
     padding: 3px;
@@ -91,6 +94,7 @@ form button {
     overflow: hidden;
     cursor: pointer;
 }
+
 form button:hover {
     margin: 0;
     padding: 3px;
@@ -101,6 +105,7 @@ form button:hover {
     border-radius: 7%;
     border-color: #fff;
 }
+
 form button::before {
     content: '';
     position: absolute;
@@ -112,12 +117,61 @@ form button::before {
     z-index: -1;
     transition: 0.8s;
 }
+
 form button::before {
     bottom: 0;
     border-radius: 50% 50% 0% 0%;
 }
+
 form button:hover::before {
     height: 180%;
 }
-/*Links*/
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 767px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 25px;
+    }
+
+    legend {
+        font-size: 25px;
+    }
+
+    label {
+        font-size: 20px;
+    }
+
+    form button {
+        width: 120px;
+        font-size: 16px;
+    }
+}
+
+/* Estilos para tabletas y dispositivos de escritorio */
+@media only screen and (min-width: 768px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    p {
+        font-size: 30px;
+    }
+
+    legend {
+        font-size: 30px;
+    }
+
+    label {
+        font-size: 25px;
+    }
+
+    form button {
+        width: 150px;
+        font-size: 18px;
+    }
+}
 </style>

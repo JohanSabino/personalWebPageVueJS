@@ -38,19 +38,37 @@
 </template>
 
 <style scoped>
+.row {
+    color: #ffff;
+    margin-left: 5%;
+}
 
-    .row{
-        color: #ffff;
-        margin-left: 5%;
+ul {
+    font-size: 30px;
+    font-style: italic;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 767px) {
+    ul {
+        font-size: 15px;
     }
+}
 
-    ul{
-        font-size: 30px;
-        font-style: italic;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        
+/* Estilos para tabletas */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    ul {
+        font-size: 25px;
     }
+}
 
+/* Estilos para dispositivos de escritorio */
+@media only screen and (min-width: 992px) {
+    ul {
+        font-size: 40px;
+    }
+}
 </style>

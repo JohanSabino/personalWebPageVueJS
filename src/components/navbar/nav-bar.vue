@@ -1,16 +1,16 @@
 <template>
-<nav class="navbar navbar-expand-lg bg-transparent fs-2 text ">
-    <div class="container-fluid ">
-      <a class="navbar-brand text-light fs-1 text"  href="#">Johan Sabino</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon "></span>
+  <nav class="navbar navbar-expand-lg navbar-light bg-transparent fs-2 text">
+    <div class="container">
+      <a class="navbar-brand text-light fs-1" href="#">Johan Sabino</a>
+      <button class="bg-transparent navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse d-flex flex-row-reverse bd-highlight" id="navbarNavDropdown">
-        <ul class="navbar-nav ">
-          <li class="nav-item ">
-            <a class="nav-link active text-light " aria-current="page" href="#Skills">Skills</a>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="#Skills">Skills</a>
           </li>
-          <li class="nav-item ">
+          <li class="nav-item">
             <a class="nav-link text-light" href="#Soft_Skills">Soft Skills</a>
           </li>
           <li class="nav-item dropdown">
@@ -32,17 +32,42 @@
 </template>
 
 <style scoped>
+/* Estilos específicos para dispositivos móviles */
+@media (max-width: 991px) {
+  .navbar-nav {
+    margin-top: 15px;
+    text-align: center;
+  }
 
-.navbar navbar-expand-lg bg-body-tertiary {
-  background-color: #ffff;
+  .navbar-toggler {
+    order: 0;
+    color: rgba(0, 0, 0, 0.1);
+   
+  }
+  span .navbar-toggler-icon{
+    color: rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-nav .nav-item {
+    margin: 0;
+    
+  }
 }
-li{
-  margin: 0 60px 0 0;
-  transition: 1s;
-}
-li:hover{
-  margin: 0 60px 0 0;
-  -webkit-transform:scale(1.0);transform:scale(1.1);
+
+/* Estilos específicos para dispositivos de escritorio */
+@media (min-width: 992px) {
+  .navbar-nav .nav-item {
+    margin-right: 30px;
+  }
+
+  .navbar-nav .nav-item:last-child {
+    margin-right: 0;
+  }
+
+  .navbar-nav .nav-item:hover {
+    transform: scale(1.1);
+  }
 }
 </style>
+
 
