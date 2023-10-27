@@ -41,11 +41,10 @@
                         </div>
                         <div class="elemento">
                             <label for="mensaje">Message</label> <br />
+                    
                             <textarea
                                 id="mensaje"
                                 name="mensaje"
-                                rows="7"
-                                cols="40"
                             ></textarea
                             ><br />
                             <button type="submit">Submit</button>
@@ -126,29 +125,39 @@ form button::before {
 form button:hover::before {
     height: 180%;
 }
+#mensaje{
+    resize: none;
+    width: 60%;
+    height: 100px;
+}
 
 /* Estilos para dispositivos móviles */
 @media only screen and (max-width: 767px) {
     h1 {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     p {
-        font-size: 25px;
-    }
-
-    legend {
-        font-size: 25px;
-    }
-
-    label {
         font-size: 20px;
     }
 
-    form button {
-        width: 120px;
-        font-size: 16px;
+    legend {
+        font-size: 20px;
     }
+
+    label {
+        font-size: 15px;
+    }
+
+    form button {
+        width: 40%;
+        font-size: 15px;
+    }
+}
+#mensaje{
+    resize: none;
+    width: 60%;
+    height: 100px;
 }
 
 /* Estilos para tabletas y dispositivos de escritorio */

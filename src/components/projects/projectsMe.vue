@@ -94,7 +94,11 @@
     @media only screen and (max-width: 767px) {
         #Projects{
             margin-top: -13px;
+            margin-left: -20px;
             width: 100%;
+        }
+        h3{
+           justify-content: center;
         }
         #Projects ul {
             width: fit-content;
@@ -106,7 +110,7 @@
         }
    
         #Projects ul a li {
-            font-size: 12px;
+            font-size: 15px;
             overflow: hidden;
             margin-top: 20px;
         }

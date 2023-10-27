@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-transparent fs-2 text">
     <div class="container">
       <a class="navbar-brand text-light fs-1" href="#">Johan Sabino</a>
-      <button class="bg-transparent navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -32,6 +32,16 @@
 </template>
 
 <style scoped>
+
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;utf8,<svg fill='rgba(255, 255, 255, 0.3)' height='1em' width='1em' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M1 2.75A.75.75 0 0 1 1.75 2h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 2.75zM1.75 6h12.5a.75.75 0 0 1 0 1.5H1.75a.75.75 0 0 1 0-1.5zM1 9.75A.75.75 0 0 1 1.75 9h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 9.75z'/></svg>");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 1.5em; /* Ajusta el ancho del ícono según sea necesario */
+  height: 1.5em; /* Ajusta la altura del ícono según sea necesario */
+  vertical-align: middle; /* Centra verticalmente el ícono en el botón */
+}
 /* Estilos específicos para dispositivos móviles */
 @media (max-width: 991px) {
   .navbar-nav {
@@ -39,19 +49,21 @@
     text-align: center;
   }
 
-  .navbar-toggler {
-    order: 0;
-    color: rgba(0, 0, 0, 0.1);
-   
-  }
-  span .navbar-toggler-icon{
-    color: rgba(0, 0, 0, 0.1);
-  }
+button{
+  border-color: rgba(255, 255, 255, 0.3);
+}
 
-  .navbar-nav .nav-item {
-    margin: 0;
-    
-  }
+  .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;utf8,<svg fill='rgba(255, 255, 255, 0.3)' height='1em' width='1em' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M1 2.75A.75.75 0 0 1 1.75 2h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 2.75zM1.75 6h12.5a.75.75 0 0 1 0 1.5H1.75a.75.75 0 0 1 0-1.5zM1 9.75A.75.75 0 0 1 1.75 9h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 9.75z'/></svg>");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 1.5em; /* Ajusta el ancho del ícono según sea necesario */
+  height: 1.5em; /* Ajusta la altura del ícono según sea necesario */
+  vertical-align: middle; /* Centra verticalmente el ícono en el botón */
+}
+
+
+
 }
 
 /* Estilos específicos para dispositivos de escritorio */
